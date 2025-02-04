@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spinning Code</title>
+        <script src="/gsap.min.js"></script>
+        <style>
+
+                body{
+                background: black;
+                overflow: hidden;
+                }
+                canvas{
+                display: block;
+                
+                }
+
+                div{
+                background-color: antiquewhite;
+                
+                }
+        </style>
+</head>
+<body>
+        
+
+
+
+
+        <script src="./rotatingCode.js"></script>
+        <script>
+
+                for (let i = 0; i<28; i++){
+
+                        let curCanvasId = 'codeLine'+i;
+                        loadCanvas(curCanvasId);
+                        loadImg(curCanvasId, i*28);
+                }
+        </script>
+</body>
+</html>
